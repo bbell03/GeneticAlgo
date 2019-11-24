@@ -59,7 +59,7 @@
       it by 50% leaving only the fittest according to fitness value,
       then mating these fittest to replenish the 50% culled.
 
-    def mutation(self, genome) -- FRGINE OP
+    def mutation(self, genome) -- FRINGE OP
       * takes a reference to self and implements a 10% chance of mutation in
       which one of the 7 bits in a genome array are flipped.
 
