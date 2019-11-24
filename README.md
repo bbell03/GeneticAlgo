@@ -10,9 +10,9 @@
   as described by the specification on canvas.
 
   * The knapsack problem simulates the placement of items in a knapsack.
-  * Each knapsack item has the following properties:
-    * a weight attribute value,
-    * and an importance attribute value.
+
+  * Each knapsack item has the following properties: a weight attribute value,
+    and an importance attribute value.
 
 ### ARCHITECTURE
   This implementation uses genetic algorithms as an optimization to return the
@@ -34,7 +34,7 @@
 
   ##### Auxiliary Functions
 
-    def crossover(parent1, parent2)
+    def crossover(parent1, parent2) -- FRINGE OP
       * takes two parent genomes and returns two children genomes
 
     def generator()
@@ -49,18 +49,37 @@
 
   ##### Knapsack Class Member Functions
 
-    def fitness(self, genome)
+    def fitness(self, genome) -- FITNESS FUNCTION
       * takes a reference to self and a genome and returns the fitness
-      value of that genome
+      value of that genome by summing its fitness values
 
-    def pool(self)
-      * takes a reference to self, contains the main loop which creates
-      a population of different knapsack placements and culls them by 50%
-      leaving only the fittest according to fitness value, then mating these
-      fittest to replenish the 50% culled and repeating the process.
+    def pool(self) -- mate and cull GA, SOLUTION TEST
+      * takes a reference to self, contains the main functionality of the GA
+      which creates a population of different knapsack placements and culls
+      it by 50% leaving only the fittest according to fitness value,
+      then mating these fittest to replenish the 50% culled.
 
-    def mutation(self, genome)
+    def mutation(self, genome) -- FRGINE OP
       * takes a reference to self and implements a 10% chance of mutation in
       which one of the 7 bits in a genome array are flipped.
 
 ### METHODOLOGY
+
+  Our program is implemented according to the parameters of Genetic algorithms
+  specified in both the assignment handout and the class slides.
+
+  A genome or chromosome is represented by a bit array of length 7
+  corresponding to a binary choice of whether each of 7 items is in the
+  knapsack.
+
+  A fitness function is implemented which returns the total importance value
+  of a given genome according to which items it contains.
+
+  Fringe operations, crossover and mutation which encompass the mating process
+  of this GA.
+
+  The pool function contains an array of the most updated population with
+  the solution optimal individual at the front.
+
+  This pool function can be run in a loop as many times as specified on a
+  given Knapsack object. The more runtime, the better the optimization.
