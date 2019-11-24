@@ -75,7 +75,7 @@
   A fitness function is implemented which returns the total importance value
   of a given genome according to which items it contains.
 
-  Fringe operations, crossover and mutation which encompass the mating process
+  Fringe operations, crossover and mutation encompass the mating process
   of this GA.
 
   The pool function contains an array of the most updated population with
