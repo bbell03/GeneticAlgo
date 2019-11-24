@@ -12,7 +12,7 @@
     * a weight attribute value,
     * and an importance attribute value.
 
-###ARCHITECTURE
+### ARCHITECTURE
   This implementation uses genetic algorithms as an optimization to return the ideal combination of items in the backpack with
   the total weight not exceeding the maximum capacity of 120, and the total
   value of items in the backpack being as large as possible.
