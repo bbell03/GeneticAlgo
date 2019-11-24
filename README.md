@@ -30,7 +30,7 @@
 
 #### FUNCTION(S) IMPLEMENTED INCLUDE:
 
-  #### Auxiliary Functions
+  ##### Auxiliary Functions
 
     def crossover(parent1, parent2)
       * takes two parent genomes and returns two children genomes
@@ -45,7 +45,7 @@
       descending order by the second tuple element's value
       (in this case fitness)
 
-  #### Knapsack Class Member Functions
+  ##### Knapsack Class Member Functions
 
     def fitness(self, genome)
       * takes a reference to self and a genome and returns the fitness
