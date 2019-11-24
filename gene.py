@@ -31,7 +31,6 @@ class Knapsack():
     def __init__(self):
         self.dimen = 7
         self.maxweight = 120
-        #will hold genomes
         self.population = []
         self.fit = []
         self.weight = [20, 30, 60, 90, 50, 70, 30]
