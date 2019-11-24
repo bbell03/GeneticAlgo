@@ -3,6 +3,8 @@
 
 ### Code Details
 
+### Author(s): Ercan Sen and Brandon Bell
+
 ### IMPLEMENTATION
   This is our implementation of the knapsack problem using a Genetic Algorithm
   as described by the specification on canvas.
@@ -13,7 +15,8 @@
     * and an importance attribute value.
 
 ### ARCHITECTURE
-  This implementation uses genetic algorithms as an optimization to return the ideal combination of items in the backpack with
+  This implementation uses genetic algorithms as an optimization to return the
+  ideal combination of items in the backpack with
   the total weight not exceeding the maximum capacity of 120, and the total
   value of items in the backpack being as large as possible.
 
