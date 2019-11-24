@@ -20,7 +20,7 @@
   the total weight not exceeding the maximum capacity of 120, and the total
   value of items in the backpack being as large as possible.
 
-  class Knapsack()
+  * class Knapsack()
   The Knapsack itself is represented by a class with the following attributes.
     * self.dimen - items to select from 7
     * self.maxweight - max capacity of bag 120
