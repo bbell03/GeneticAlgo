@@ -21,6 +21,7 @@
   value of items in the backpack being as large as possible.
 
   class Knapsack() -- The Knapsack itself is represented by a class with the following attributes
+  
     * self.dimen - items to select from 7
     * self.maxweight - max capacity of bag 120
     * self.population - array of 100 genomes, initialized empty
