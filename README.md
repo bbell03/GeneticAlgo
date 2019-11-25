@@ -79,7 +79,7 @@
   of this GA.
 
   The pool function contains an array of the most updated population with
-  the solution optimal individual at the front.
+  the solution, or optimal individual at the front.
 
   This pool function can be run in a loop as many times as specified on a
   given Knapsack object. The more runtime, the better the optimization.
